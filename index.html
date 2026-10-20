@@ -1,79 +1,270 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#070910">
-  <meta name="description" content="Михаил Попов — студент НИУ ВШЭ, разработчик игровых и программных проектов.">
-  <title>Михаил Попов — портфолио разработчика</title>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#070910">
+    <meta name="description" content="Михаил Попов — студент НИУ ВШЭ, разработчик игровых и программных проектов.">
+    <title>Михаил Попов — портфолио разработчика</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
-  <div class="noise" aria-hidden="true"></div><div class="cursor-glow" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span id="progress-bar"></span></div>
-  <header class="topbar">
-    <a class="brand" href="#home" aria-label="Михаил Попов — главная"><span class="brand-icon">MP<span>_</span></span><span class="brand-caption">DEV<span>_</span>PROFILE</span></a>
-    <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><span></span><span></span></button>
+<div class="noise" aria-hidden="true"></div>
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+<header class="topbar">
+    <a class="brand" href="#home" aria-label="Михаил Попов — главная"><span
+            class="brand-icon">MP<span>_</span></span><span class="brand-caption">DEV<span>_</span>PROFILE</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span></button>
     <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
-      <a href="#about"><i>01</i> Обо мне</a><a href="#projects"><i>02</i> Проекты</a><a href="#stack"><i>03</i> Стек</a><a href="#contact"><i>04</i> Контакт</a>
+        <a href="#about"><i>01</i> Обо мне</a><a href="#projects"><i>02</i> Проекты</a><a href="#stack"><i>03</i>
+        Стек</a><a href="#contact"><i>04</i> Контакт</a>
     </nav>
     <a class="availability" href="#contact"><span class="pulse-dot"></span> НА СВЯЗИ</a>
-  </header>
+</header>
 
-  <main>
+<main>
     <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="terminal-mark">&gt;_</span> PLAYER ONE / DEVELOPER PROFILE</p>
-        <div class="name-block"><span class="name-kicker">ПОРТФОЛИО · 2026</span><h1>Михаил<br><span class="name-last">Попов<span class="name-cursor">_</span></span></h1></div>
-        <p class="hero-role"><span class="role-line"></span> Разработчик · Студент НИУ ВШЭ</p>
-        <p class="hero-lead">Учусь на программе <strong>«Программирование и инжиниринг компьютерных игр»</strong>. Создаю приложения, автоматизирую процессы и исследую, как идеи превращаются в работающие продукты.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#projects">Исследовать проекты <span>↘</span></a><a class="button button-ghost" href="#about"><span class="play-icon">▶</span> Моя история</a></div>
-        <div class="hero-meta"><span><b>01</b> / 04 — СТАРТОВАЯ ЗОНА</span><span class="meta-right">SCROLL TO EXPLORE <span class="scroll-arrow">↓</span></span></div>
-      </div>
-      <div class="hero-visual" aria-label="Декоративная игровая сцена с интерфейсом разработчика">
-        <div class="scene-grid"></div><div class="scene-ring ring-a"></div><div class="scene-ring ring-b"></div><div class="scene-ring ring-c"></div>
-        <div class="crosshair crosshair-one">+</div><div class="crosshair crosshair-two">+</div>
-        <div class="floating-label label-build"><span class="pulse-dot"></span> BUILD MODE <b>ON</b></div>
-        <div class="terminal-card"><div class="terminal-head"><div class="terminal-lights"><i></i><i></i><i></i></div><span>profile.config</span><span class="terminal-lock">⌁</span></div><div class="terminal-body"><p><em>const</em> developer = {</p><p class="indent"><span>name:</span> <b>'Михаил Попов'</b>,</p><p class="indent"><span>focus:</span> <b class="green">'game dev'</b>,</p><p class="indent"><span>mindset:</span> <b class="purple">'build & learn'</b>,</p><p class="indent"><span>status:</span> <b class="green">'in progress'</b></p><p>};<span class="typing-caret"></span></p></div><div class="terminal-foot"><span><i class="pulse-dot"></i> SYSTEM ONLINE</span><span>v. 2026.10</span></div></div>
-        <div class="orbit-chip chip-java"><span class="tech-symbol java">♨</span> JAVA</div><div class="orbit-chip chip-unity"><span class="tech-symbol unity">◈</span> UNITY</div><div class="orbit-chip chip-ai"><span class="tech-symbol ai">✳</span> AI / TOOLS</div>
-        <div class="scene-coordinate">52° N / DEV SPACE</div><div class="scene-corner corner-tl"></div><div class="scene-corner corner-br"></div>
-      </div>
+        <div class="hero-copy">
+            <p class="eyebrow"><span class="terminal-mark">&gt;_</span> PLAYER ONE / DEVELOPER PROFILE</p>
+            <div class="name-block"><span class="name-kicker">ПОРТФОЛИО · 2026</span>
+                <h1>Михаил<br><span class="name-last">Попов<span class="name-cursor">_</span></span></h1></div>
+            <p class="hero-role"><span class="role-line"></span> Разработчик · Студент НИУ ВШЭ</p>
+            <p class="hero-lead">Учусь на программе <strong>«Программирование и инжиниринг компьютерных игр»</strong>.
+                Создаю приложения, автоматизирую процессы и исследую, как идеи превращаются в работающие продукты.</p>
+            <div class="hero-actions"><a class="button button-primary" href="#projects">Исследовать проекты
+                <span>↘</span></a><a class="button button-ghost" href="#about"><span class="play-icon">▶</span> Моя
+                история</a></div>
+            <div class="hero-meta"><span><b>01</b> / 04 — СТАРТОВАЯ ЗОНА</span><span class="meta-right">SCROLL TO EXPLORE <span
+                    class="scroll-arrow">↓</span></span></div>
+        </div>
+        <div class="hero-visual" aria-label="Декоративная игровая сцена с интерфейсом разработчика">
+            <div class="scene-grid"></div>
+            <div class="scene-ring ring-a"></div>
+            <div class="scene-ring ring-b"></div>
+            <div class="scene-ring ring-c"></div>
+            <div class="crosshair crosshair-one">+</div>
+            <div class="crosshair crosshair-two">+</div>
+            <div class="floating-label label-build"><span class="pulse-dot"></span> BUILD MODE <b>ON</b></div>
+            <div class="terminal-card">
+                <div class="terminal-head">
+                    <div class="terminal-lights"><i></i><i></i><i></i></div>
+                    <span>profile.config</span><span class="terminal-lock">⌁</span></div>
+                <div class="terminal-body"><p><em>const</em> developer = {</p>
+                    <p class="indent"><span>name:</span> <b>'Михаил Попов'</b>,</p>
+                    <p class="indent"><span>focus:</span> <b class="green">'game dev'</b>,</p>
+                    <p class="indent"><span>mindset:</span> <b class="purple">'build & learn'</b>,</p>
+                    <p class="indent"><span>status:</span> <b class="green">'in progress'</b></p>
+                    <p>};<span class="typing-caret"></span></p></div>
+                <div class="terminal-foot"><span><i class="pulse-dot"></i> SYSTEM ONLINE</span><span>v. 2026.10</span>
+                </div>
+            </div>
+            <div class="orbit-chip chip-java"><span class="tech-symbol java">♨</span> JAVA</div>
+            <div class="orbit-chip chip-unity"><span class="tech-symbol unity">◈</span> UNITY</div>
+            <div class="orbit-chip chip-ai"><span class="tech-symbol ai">✳</span> AI / TOOLS</div>
+            <div class="scene-coordinate">52° N / DEV SPACE</div>
+            <div class="scene-corner corner-tl"></div>
+            <div class="scene-corner corner-br"></div>
+        </div>
     </section>
 
-    <div class="ticker" aria-label="Направления разработки"><div class="ticker-track"><span>ANDROID DEVELOPMENT</span><b>✳</b><span>GAME SYSTEMS</span><b>✳</b><span>AI EXPERIMENTS</span><b>✳</b><span>WEB PROJECTS</span><b>✳</b><span>AUTOMATION</span><b>✳</b><span>ANDROID DEVELOPMENT</span><b>✳</b><span>GAME SYSTEMS</span><b>✳</b></div></div>
+    <div class="ticker" aria-label="Направления разработки">
+        <div class="ticker-track"><span>ANDROID DEVELOPMENT</span><b>✳</b><span>GAME SYSTEMS</span><b>✳</b><span>AI EXPERIMENTS</span><b>✳</b><span>WEB PROJECTS</span><b>✳</b><span>AUTOMATION</span><b>✳</b><span>ANDROID DEVELOPMENT</span><b>✳</b><span>GAME SYSTEMS</span><b>✳</b>
+        </div>
+    </div>
 
     <section class="about section-wrap section-block" id="about">
-      <div class="section-label"><span>01</span><span class="label-slash">/</span> CHARACTER PROFILE</div>
-      <div class="about-layout"><div><p class="micro-label">ОБО МНЕ</p><h2>Любопытство —<br>мой <span class="gradient-text">двигатель.</span></h2></div><div class="about-text"><p>Мне интересно разбираться в задаче целиком: понять проблему, придумать решение, собрать рабочий прототип и постепенно сделать его лучше.</p><p>В проектах соединяю мобильную разработку, работу с данными, автоматизацию и AI. А обучение в сфере разработки компьютерных игр помогает смотреть на программирование ещё и как на способ создавать интерактивные миры.</p><div class="quote-card"><span class="quote-symbol">“</span><p>Не просто написать код —<br>а создать то, чем хочется пользоваться.</p><span class="quote-code">CORE_PRINCIPLE // 001</span></div></div></div>
-      <div class="stats-grid"><div class="stat-card"><span class="stat-id">[ 01 ]</span><span class="stat-icon">⌘</span><strong>Системное мышление</strong><p>Логика, структура, архитектура</p></div><div class="stat-card"><span class="stat-id">[ 02 ]</span><span class="stat-icon">↗</span><strong>Практика прежде всего</strong><p>От идеи до работающего прототипа</p></div><div class="stat-card"><span class="stat-id">[ 03 ]</span><span class="stat-icon">✳</span><strong>Автоматизация</strong><p>Меньше рутины, больше пользы</p></div></div>
+        <div class="section-label"><span>01</span><span class="label-slash">/</span> CHARACTER PROFILE</div>
+        <div class="about-layout">
+            <div><p class="micro-label">ОБО МНЕ</p>
+                <h2>Любопытство —<br>мой <span class="gradient-text">двигатель.</span></h2></div>
+            <div class="about-text"><p>Мне интересно разбираться в задаче целиком: понять проблему, придумать решение,
+                собрать рабочий прототип и постепенно сделать его лучше.</p>
+                <p>В проектах соединяю мобильную разработку, работу с данными, автоматизацию и AI. А обучение в сфере
+                    разработки компьютерных игр помогает смотреть на программирование ещё и как на способ создавать
+                    интерактивные миры.</p>
+                <div class="quote-card"><span class="quote-symbol">“</span>
+                    <p>Не просто написать код —<br>а создать то, чем хочется пользоваться.</p><span class="quote-code">CORE_PRINCIPLE // 001</span>
+                </div>
+            </div>
+        </div>
+        <div class="stats-grid">
+            <div class="stat-card"><span class="stat-id">[ 01 ]</span><span class="stat-icon">⌘</span><strong>Системное
+                мышление</strong>
+                <p>Логика, структура, архитектура</p></div>
+            <div class="stat-card"><span class="stat-id">[ 02 ]</span><span class="stat-icon">↗</span><strong>Практика
+                прежде всего</strong>
+                <p>От идеи до работающего прототипа</p></div>
+            <div class="stat-card"><span class="stat-id">[ 03 ]</span><span class="stat-icon">✳</span><strong>Автоматизация</strong>
+                <p>Меньше рутины, больше пользы</p></div>
+        </div>
     </section>
 
     <section class="projects section-wrap section-block" id="projects">
-      <div class="section-heading"><div><div class="section-label"><span>02</span><span class="label-slash">/</span> QUEST LOG</div><p class="micro-label">ИЗБРАННЫЕ ПРОЕКТЫ</p><h2>Создано<br><span class="gradient-text">с интересом.</span></h2></div><div class="heading-side"><p>Каждый проект — отдельный уровень: новая задача, новые инструменты и опыт, который можно применить дальше.</p><span class="quest-count"><b>03</b> PROJECTS UNLOCKED</span></div></div>
-      <div class="project-grid">
-        <article class="project-card project-large reveal"><div class="project-visual visual-android"><div class="visual-topline"><span>APP_001 / ANDROID</span><span class="visual-live"><i></i> IN DEVELOPMENT</span></div><div class="phone"><div class="phone-camera"></div><div class="phone-screen"><div class="mini-top">ЭТАЛОН+ <span>✳</span></div><div class="mini-title">Проверка<br>работы</div><div class="mini-sheet"><span>№</span><span>Ответ</span><span>Статус</span><hr><b>01</b><span>Верно</span><strong>✓</strong><hr><b>02</b><span>Проверить</span><strong>…</strong></div><div class="mini-button">Проверить с AI ↗</div></div></div><span class="visual-label">MOBILE / AI ASSISTED</span><div class="visual-deco deco-plus">+</div></div><div class="project-info"><div class="project-title-row"><span class="project-index">QUEST 01</span><span class="project-arrow">↗</span></div><h3>Эталон+</h3><p>Концепция Android-приложения для преподавателей: распознавание ученических работ по фото, проверка ответов по эталону и помощь в оценивании.</p><div class="tags"><span>Java</span><span>Android SDK</span><span>OCR</span><span>AI</span></div></div></article>
-        <article class="project-card reveal"><div class="project-visual visual-olimp"><div class="visual-topline"><span>CONCEPT_002 / PRODUCT</span><span>✳</span></div><div class="olimp-window"><div class="owl-face"><span></span><span></span></div><div class="olimp-caption">OLIMP<span>TRACK</span></div><div class="olimp-sub">YOUR NEXT OPPORTUNITY</div><div class="deadline-card"><span>БЛИЖАЙШИЙ ДЕДЛАЙН</span><b>Олимпиада по информатике</b><div><i></i><span>До окончания регистрации</span><strong>05 дн.</strong></div></div></div><span class="visual-label">WEB / EDUCATION</span></div><div class="project-info"><div class="project-title-row"><span class="project-index">QUEST 02</span><span class="project-arrow">↗</span></div><h3>OlimpTrack</h3><p>Идея сервиса для отслеживания олимпиад, дедлайнов и возможностей поступления в университеты.</p><div class="tags"><span>Telegram</span><span>Automation</span><span>Product design</span></div></div></article>
-        <article class="project-card reveal"><div class="project-visual visual-game"><div class="visual-topline"><span>UNITY_SCENE / 003</span><span>WORLD DATA</span></div><div class="game-scene"><div class="game-sun"></div><div class="game-moon"></div><div class="game-platform platform-back"></div><div class="game-platform"></div><div class="game-player">◆</div><div class="game-dialog"><small>MIRA / NPC</small><span>У каждой истории<br>есть продолжение...</span><b>▼</b></div><div class="game-code">DIALOGUE_NODE_04</div></div><span class="visual-label">GAME DEV / UNITY</span></div><div class="project-info"><div class="project-title-row"><span class="project-index">QUEST 03</span><span class="project-arrow">↗</span></div><h3>PlotTalkAI</h3><p>Эксперименты с диалогами персонажей, узлами сценария и данными игрового мира в Unity.</p><div class="tags"><span>Unity</span><span>C#</span><span>Dialogue systems</span></div></div></article>
-      </div><p class="project-disclaimer"><span>i</span> Учебные и личные проекты. Статус и состав функций могут меняться по мере разработки.</p>
+        <div class="section-heading">
+            <div>
+                <div class="section-label"><span>02</span><span class="label-slash">/</span> QUEST LOG</div>
+                <p class="micro-label">ИЗБРАННЫЕ ПРОЕКТЫ</p>
+                <h2>Создано<br><span class="gradient-text">с интересом.</span></h2></div>
+            <div class="heading-side"><p>Каждый проект — отдельный уровень: новая задача, новые инструменты и опыт,
+                который можно применить дальше.</p><span class="quest-count"><b>03</b> PROJECTS UNLOCKED</span></div>
+        </div>
+        <div class="project-grid">
+            <article class="project-card project-large reveal">
+                <div class="project-visual visual-android">
+                    <div class="visual-topline"><span>APP_001 / ANDROID</span><span class="visual-live"><i></i> IN DEVELOPMENT</span>
+                    </div>
+                    <div class="phone">
+                        <div class="phone-camera"></div>
+                        <div class="phone-screen">
+                            <div class="mini-top">ЭТАЛОН+ <span>✳</span></div>
+                            <div class="mini-title">Проверка<br>работы</div>
+                            <div class="mini-sheet"><span>№</span><span>Ответ</span><span>Статус</span>
+                                <hr>
+                                <b>01</b><span>Верно</span><strong>✓</strong>
+                                <hr>
+                                <b>02</b><span>Проверить</span><strong>…</strong></div>
+                            <div class="mini-button">Проверить с AI ↗</div>
+                        </div>
+                    </div>
+                    <span class="visual-label">MOBILE / AI ASSISTED</span>
+                    <div class="visual-deco deco-plus">+</div>
+                </div>
+                <div class="project-info">
+                    <div class="project-title-row"><span class="project-index">QUEST 01</span></div>
+                    <h3>Эталон+</h3>
+                    <p>Концепция Android-приложения для преподавателей: распознавание ученических работ по фото,
+                        проверка ответов по эталону и помощь в оценивании.</p>
+                    <div class="tags"><span>Java</span><span>Android SDK</span><span>OCR</span><span>AI</span></div>
+                </div>
+            </article>
+            <article class="project-card reveal">
+                <div class="project-visual visual-olimp">
+                    <div class="visual-topline"><span>CONCEPT_002 / PRODUCT</span><span>✳</span></div>
+                    <div class="olimp-window">
+                        <div class="owl-face"><span></span><span></span></div>
+                        <div class="olimp-caption">OLIMP<span>TRACK</span></div>
+                        <div class="olimp-sub">YOUR NEXT OPPORTUNITY</div>
+                        <div class="deadline-card"><span>БЛИЖАЙШИЙ ДЕДЛАЙН</span><b>Олимпиада по информатике</b>
+                            <div><i></i><span>До окончания регистрации</span><strong>05 дн.</strong></div>
+                        </div>
+                    </div>
+                    <span class="visual-label">WEB / EDUCATION</span></div>
+                <div class="project-info">
+                    <div class="project-title-row"><span class="project-index">QUEST 02</span></div>
+                    <h3>OlimpTrack</h3>
+                    <p>Идея сервиса для отслеживания олимпиад, дедлайнов и возможностей поступления в университеты.</p>
+                    <div class="tags"><span>Telegram</span><span>Automation</span><span>Product design</span></div>
+                </div>
+            </article>
+            <article class="project-card reveal">
+                <div class="project-visual visual-game">
+                    <div class="visual-topline"><span>UNITY_SCENE / 003</span><span>WORLD DATA</span></div>
+                    <div class="game-scene">
+                        <div class="game-sun"></div>
+                        <div class="game-moon"></div>
+                        <div class="game-platform platform-back"></div>
+                        <div class="game-platform"></div>
+                        <div class="game-player">◆</div>
+                        <div class="game-dialog"><small>MIRA / NPC</small><span>У каждой истории<br>есть продолжение...</span><b>▼</b>
+                        </div>
+                        <div class="game-code">DIALOGUE_NODE_04</div>
+                    </div>
+                    <span class="visual-label">GAME DEV / UNITY</span></div>
+                <div class="project-info">
+                    <div class="project-title-row"><span class="project-index">QUEST 03</span></div>
+                    <h3>PlotTalkAI</h3>
+                    <p>Эксперименты с диалогами персонажей, узлами сценария и данными игрового мира в Unity.</p>
+                    <div class="tags"><span>Unity</span><span>C#</span><span>Dialogue systems</span></div>
+                </div>
+            </article>
+        </div>
+        <p class="project-disclaimer"><span>i</span> Учебные и личные проекты. Статус и состав функций могут меняться по
+            мере разработки.</p>
     </section>
 
-    <section class="stack section-wrap section-block" id="stack"><div class="section-label"><span>03</span><span class="label-slash">/</span> LOADOUT</div><div class="stack-layout"><div class="stack-intro"><p class="micro-label">ИНСТРУМЕНТЫ РАЗРАБОТЧИКА</p><h2>Мой набор<br><span class="gradient-text">инструментов.</span></h2><p>Технологии, с которыми я работаю, учусь и собираю новые проекты.</p><div class="loadout-note"><span>✳</span><div><b>ALWAYS LEARNING</b><p>Углубляю знания алгоритмов, структур данных и проектирования программных систем.</p></div></div></div><div class="stack-list">
-      <div class="stack-row"><div class="stack-icon icon-java"><i class="devicon-java-plain colored" aria-hidden="true"></i></div><div class="stack-details"><strong>Java</strong><span>Android-приложения · ООП</span></div><span class="stack-type">CORE</span><span class="stack-arrow">↗</span></div>
-      <div class="stack-row"><div class="stack-icon icon-android"><i class="devicon-android-plain colored" aria-hidden="true"></i></div><div class="stack-details"><strong>Android SDK</strong><span>UI · фоновые задачи · камера</span></div><span class="stack-type">MOBILE</span><span class="stack-arrow">↗</span></div>
-      <div class="stack-row"><div class="stack-icon icon-unity"><i class="devicon-unity-plain" aria-hidden="true"></i><i class="devicon-csharp-plain colored" aria-hidden="true"></i></div><div class="stack-details"><strong>Unity / C#</strong><span>Игровая логика · диалоги</span></div><span class="stack-type">GAME DEV</span><span class="stack-arrow">↗</span></div>
-      <div class="stack-row"><div class="stack-icon icon-python"><i class="devicon-python-plain colored" aria-hidden="true"></i><i class="devicon-cplusplus-plain colored" aria-hidden="true"></i></div><div class="stack-details"><strong>Python / C++</strong><span>Алгоритмы · учебные проекты</span></div><span class="stack-type">LANGUAGES</span><span class="stack-arrow">↗</span></div>
-      <div class="stack-row"><div class="stack-icon icon-supabase"><i class="devicon-supabase-plain colored" aria-hidden="true"></i><i class="devicon-sqlite-plain colored" aria-hidden="true"></i></div><div class="stack-details"><strong>Supabase / SQLite</strong><span>Хранение данных · запросы</span></div><span class="stack-type">DATA</span><span class="stack-arrow">↗</span></div>
-      <div class="stack-row"><div class="stack-icon icon-git"><i class="devicon-githubactions-plain colored" aria-hidden="true"></i></div><div class="stack-details"><strong>GitHub Actions</strong><span>CI · автоматизация процессов</span></div><span class="stack-type">AUTOMATION</span><span class="stack-arrow">↗</span></div>
-    </div></div></section>
+    <section class="stack section-wrap section-block" id="stack">
+        <div class="section-label"><span>03</span><span class="label-slash">/</span> LOADOUT</div>
+        <div class="stack-layout">
+            <div class="stack-intro"><p class="micro-label">ИНСТРУМЕНТЫ РАЗРАБОТЧИКА</p>
+                <h2>Мой набор<br><span class="gradient-text">инструментов.</span></h2>
+                <p>Технологии, с которыми я работаю, учусь и собираю новые проекты.</p>
+            </div>
+            <div class="stack-list">
+                <div class="stack-row">
+                    <div class="stack-icon icon-java"><i class="devicon-java-plain colored" aria-hidden="true"></i>
+                    </div>
+                    <div class="stack-details"><strong>Java</strong><span>Android-приложения · ООП</span></div>
+                    <span class="stack-type">CORE</span></div>
+                <div class="stack-row">
+                    <div class="stack-icon icon-android"><i class="devicon-android-plain colored"
+                                                            aria-hidden="true"></i></div>
+                    <div class="stack-details"><strong>Android SDK</strong><span>UI · фоновые задачи · камера</span>
+                    </div>
+                    <span class="stack-type">MOBILE</span></div>
+                <div class="stack-row">
+                    <div class="stack-icon icon-unity"><i class="devicon-unity-plain" aria-hidden="true"></i><i
+                            class="devicon-csharp-plain colored" aria-hidden="true"></i></div>
+                    <div class="stack-details"><strong>Unity / C#</strong><span>Игровая логика · диалоги</span></div>
+                    <span class="stack-type">GAME DEV</span></div>
+                <div class="stack-row">
+                    <div class="stack-icon icon-python"><i class="devicon-python-plain colored"
+                                                           aria-hidden="true"></div>
+                    <div class="stack-details"><strong>Python</strong><span>Алгоритмы · учебные проекты</span>
+                    </div>
+                    <span class="stack-type">LANGUAGES</span></div>
+                <div class="stack-row">
+                    <div class="stack-icon icon-supabase"><i class="devicon-supabase-plain colored"
+                                                             aria-hidden="true"></i><i
+                            class="devicon-sqlite-plain colored" aria-hidden="true"></i></div>
+                    <div class="stack-details"><strong>Supabase / SQLite</strong><span>Хранение данных · запросы</span>
+                    </div>
+                    <span class="stack-type">DATA</span></div>
+                <div class="stack-row">
+                    <div class="stack-icon icon-git"><i class="devicon-githubactions-plain colored"
+                                                        aria-hidden="true"></i></div>
+                    <div class="stack-details"><strong>GitHub Actions</strong><span>CI · автоматизация процессов</span>
+                    </div>
+                    <span class="stack-type">AUTOMATION</span></div>
+            </div>
+        </div>
+    </section>
 
-    <section class="contact section-wrap section-block" id="contact"><div class="contact-frame"><div class="section-label"><span>04</span><span class="label-slash">/</span> CO-OP MODE</div><div class="contact-inner"><p class="micro-label">ЕСТЬ ИДЕЯ?</p><h2>Давай создадим<br><span class="gradient-text">что-то классное.</span></h2><p>Открыт к интересным задачам, совместным проектам и обмену идеями.</p><div class="contact-links"><a href="https://github.com/your-username" target="_blank" rel="noreferrer"><span class="contact-icon">⌘</span><span><b>GitHub</b><small>Код и проекты</small></span><span class="contact-arrow">↗</span></a><a href="https://t.me/your_username" target="_blank" rel="noreferrer"><span class="contact-icon">➤</span><span><b>Telegram</b><small>Написать сообщение</small></span><span class="contact-arrow">↗</span></a><a href="mailto:your.email@example.com"><span class="contact-icon">✉</span><span><b>Email</b><small>Электронная почта</small></span><span class="contact-arrow">↗</span></a></div><p class="contact-hint">Перед публикацией замени ссылки-заглушки на свои контакты.</p></div><div class="contact-graphic"><div class="graphic-ring"></div><div class="graphic-core">MP<span>_</span></div><span class="graphic-caption cap-top">READY TO BUILD</span><span class="graphic-caption cap-bottom">PRESS START ↗</span><span class="graphic-spark spark-one">✳</span><span class="graphic-spark spark-two">+</span></div></div></section>
-  </main>
-  <footer><a class="brand footer-brand" href="#home"><span class="brand-icon">MP<span>_</span></span><span class="brand-caption">MIKHAIL POPOV</span></a><span class="footer-center">DESIGNED TO LEARN. BUILT TO CREATE.</span><a class="back-top" href="#home">В НАЧАЛО <span>↑</span></a></footer>
-  <script src="script.js"></script>
+    <section class="contact section-wrap section-block" id="contact">
+        <div class="contact-frame">
+            <div class="section-label"><span>04</span><span class="label-slash">/</span> CO-OP MODE</div>
+            <div class="contact-inner"><p class="micro-label">ЕСТЬ ИДЕЯ?</p>
+                <h2>Давай создадим<br><span class="gradient-text">что-то классное.</span></h2>
+                <p>Открыт к интересным задачам, совместным проектам и обмену идеями.</p>
+                <div class="contact-links"><a href="https://github.com/MihPopov" target="_blank"
+                                              rel="noreferrer"><span class="contact-icon"><i
+                        class="devicon-github-original" aria-hidden="true"></i></span><span><b>GitHub</b><small>Код и проекты</small></span><span
+                        class="contact-arrow">↗</span></a><a href="https://t.me/MihPopov" target="_blank"
+                                                             rel="noreferrer"><span
+                        class="contact-icon">➤</span><span><b>Telegram</b><small>Написать сообщение</small></span><span
+                        class="contact-arrow">↗</span></a><a href="mailto:mihail.popov.2008@gmail.com"><span
+                        class="contact-icon">✉</span><span><b>Email</b><small>Электронная почта</small></span><span
+                        class="contact-arrow">↗</span></a></div>
+            </div>
+            <div class="contact-graphic">
+                <div class="graphic-ring"></div>
+                <div class="graphic-core">MP<span>_</span></div>
+                <span class="graphic-caption cap-top">READY TO BUILD</span><span class="graphic-caption cap-bottom">PRESS START ↗</span><span
+                    class="graphic-spark spark-one">✳</span><span class="graphic-spark spark-two">+</span></div>
+        </div>
+    </section>
+</main>
+<footer><a class="brand footer-brand" href="#home"><span class="brand-icon">MP<span>_</span></span><span
+        class="brand-caption">MIKHAIL POPOV</span></a><span
+        class="footer-center">DESIGNED TO LEARN. BUILT TO CREATE.</span><a class="back-top" href="#home">В НАЧАЛО <span>↑</span></a>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

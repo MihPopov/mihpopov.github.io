@@ -54,3 +54,27 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--green); outline
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+
+
+/* Devicon technology logos in the developer loadout */
+.stack-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  flex-shrink: 0;
+  font-size: 22px;
+  transition: transform .25s ease, filter .25s ease;
+}
+.stack-icon i {
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+}
+.stack-row:hover .stack-icon {
+  transform: scale(1.08);
+  filter: drop-shadow(0 0 7px rgba(166, 107, 255, .35));
+}
+@media (max-width: 640px) {
+  .stack-icon i { font-size: 19px; }
+}
